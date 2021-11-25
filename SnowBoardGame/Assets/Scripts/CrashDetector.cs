@@ -7,10 +7,12 @@ public class CrashDetector : MonoBehaviour
 {
     [SerializeField] float dealay = 1f;
     [SerializeField] ParticleSystem crashEffect;
+    [SerializeField] AudioClip effect;
 
     void OnTriggerEnter2D(Collider2D other){
         if(other.tag == "Ground"){
             crashEffect.Play();
+            GetComponent<AudioSource>().PlayOneShot(effect);
             Invoke("reloadScene", dealay);
         }
     }
