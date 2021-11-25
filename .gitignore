@@ -71,6 +71,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 #Source projects
 Experimental
+#Driving game
 DrivingGame/[Ll]ibrary/
 DrivingGame/[Tt]emp/
 DrivingGame/[Oo]bj/
@@ -78,4 +79,15 @@ DrivingGame/[Bb]uild/
 DrivingGame/[Bb]uilds/
 DrivingGame/[Ll]ogs/
 DrivingGame/[Uu]ser[Ss]ettings/
+
+#Snowboard Game
+SnowBoardGame/[Ll]ibrary/
+SnowBoardGame/[Tt]emp/
+SnowBoardGame/[Oo]bj/
+SnowBoardGame/[Bb]uild/
+SnowBoardGame/[Bb]uilds/
+SnowBoardGame/[Ll]ogs/
+SnowBoardGame/[Uu]ser[Ss]ettings/
+
+#misc
 CourseAssets
