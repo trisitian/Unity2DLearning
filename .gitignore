@@ -89,5 +89,14 @@ SnowBoardGame/[Bb]uilds/
 SnowBoardGame/[Ll]ogs/
 SnowBoardGame/[Uu]ser[Ss]ettings/
 
+#QuizGame
+QuizGame/[Ll]ibrary/
+QuizGame/[Tt]emp/
+QuizGame/[Oo]bj/
+QuizGame/[Bb]uild/
+QuizGame/[Bb]uilds/
+QuizGame/[Ll]ogs/
+QuizGame/[Uu]ser[Ss]ettings/
+
 #misc
 CourseAssets
