@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 5
   m_EditorClassIdentifier: 
   question: What is Big O time complexity?
+  answers:
+  - time analysis
+  - something dirty
+  - something more complex than big M
+  - unknown
+  answerValue: 0

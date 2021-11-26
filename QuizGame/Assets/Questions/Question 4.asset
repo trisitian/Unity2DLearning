@@ -13,3 +13,9 @@ MonoBehaviour:
   m_Name: Question 4
   m_EditorClassIdentifier: 
   question: What is short circuiting?
+  answers:
+  - A good 80's movie
+  - When wires touch water
+  - Calling only half an if
+  - crazy robots
+  answerValue: 2

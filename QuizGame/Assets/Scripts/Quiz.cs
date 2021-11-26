@@ -13,7 +13,7 @@ public class Quiz : MonoBehaviour
 
     [Header("Answers")]
     [SerializeField] GameObject[] answers;
-    bool hasAnsweredEarly;
+    bool hasAnsweredEarly = true;
     [Header("Buttons")]
     [SerializeField] Sprite defaulAnswerSprite;
     [SerializeField] Sprite correctAnswerSprite;
@@ -23,20 +23,30 @@ public class Quiz : MonoBehaviour
     [Header("Scoring")]
     [SerializeField] TextMeshProUGUI score;
     ScoreKeeper s;
+    [Header("Progressbar")]
+    [SerializeField] Slider progress;
+
+    public bool isComplete;
 
 
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         t = FindObjectOfType<Timer>();
         s = FindObjectOfType<ScoreKeeper>();
         score.text = "";
+        progress.maxValue = questions.Count;
+        progress.value = 0;
     }
 
     void Update(){
         timerImage.fillAmount = t.fillFraction;
         if(t.LoadNext){
+            if(progress.value == progress.maxValue){
+                isComplete = true;
+                return;
+            }
             hasAnsweredEarly = false;
             GetNextQuestion();
             t.LoadNext = false;
@@ -59,6 +69,7 @@ public class Quiz : MonoBehaviour
             SetDefault();
             GetRandomQuestion();
             PopulateQuestions();
+            progress.value++;
             s.setQuestionsSeen();
         }
     }
